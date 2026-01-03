@@ -1,21 +1,12 @@
+
 {
-  "name": "한입만-(han-ip-man)---동네-1/n-쉐어링",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "name": "hanipman-landing",
+  "version": "1.0.0",
+  "private": false,
+  "description": "한입만(Han-ip-man) - 동네 1/N 쉐어링 서비스 랜딩 페이지",
   "dependencies": {
+    "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "react": "^19.2.3"
-  },
-  "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "@google/genai": "latest"
   }
 }
