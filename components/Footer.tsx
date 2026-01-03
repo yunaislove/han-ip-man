@@ -6,10 +6,10 @@ export const Footer: React.FC = () => {
     <footer className="w-full bg-gray-900 text-gray-400 py-16 px-6 text-center text-sm">
       <div className="max-w-4xl mx-auto">
         <p className="font-bold text-white mb-4 text-lg">한입만 (Han-ip-man)</p>
-        <p className="mb-2 leading-relaxed">
-          한입만 팀 | 서울특별시 강남구 테헤란로 (가상의 주소)<br />
-          비즈니스 문의: contact@hanipman.app
-        </p>
+        <div className="mb-2 leading-relaxed">
+          <p className="text-gray-300 mb-1">한입만 팀</p>
+          <p>비즈니스 문의: <a href="mailto:hanipman.officail@gmail.com" className="hover:text-white transition-colors">hanipman.officail@gmail.com</a></p>
+        </div>
         <div className="flex justify-center gap-6 mt-8 mb-8">
           <a href="#" className="hover:text-white transition-colors">이용약관</a>
           <a href="#" className="hover:text-white transition-colors font-bold">개인정보처리방침</a>

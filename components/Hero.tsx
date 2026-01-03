@@ -2,7 +2,8 @@
 import React from 'react';
 
 export const Hero: React.FC = () => {
-  const scrollTo = (id: string) => {
+  // Fix: Removed unused 'id' parameter to match MouseEventHandler signature and rely on hardcoded 'form-section' as per original implementation
+  const scrollTo = () => {
     const el = document.getElementById('form-section');
     el?.scrollIntoView({ behavior: 'smooth' });
   };
