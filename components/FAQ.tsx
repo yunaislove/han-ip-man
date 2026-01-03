@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 
 const FAQItem: React.FC<{ q: string; a: string }> = ({ q, a }) => {
   const [isOpen, setIsOpen] = useState(false);
+  
+  // Fix: Move dynamic class logic to a variable to prevent JSX parsing confusion
+  const iconClassName = `text-2xl transition-transform ${isOpen ? 'rotate-45' : ''}`;
+
   return (
     <div className="border-b border-gray-100 last:border-0">
       <button 
@@ -10,7 +14,7 @@ const FAQItem: React.FC<{ q: string; a: string }> = ({ q, a }) => {
         className="w-full py-6 flex justify-between items-center text-left hover:text-orange-500 transition-colors"
       >
         <span className="text-lg font-bold">{q}</span>
-        <span className={`text-2xl transition-transform ${isOpen ? 'rotate-45' : ''}`}>+</span>
+        <span className={iconClassName}>+</span>
       </button>
       {isOpen && (
         <div className="pb-6 text-gray-600 leading-relaxed animate-fade-in">
