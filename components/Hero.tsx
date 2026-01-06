@@ -2,7 +2,6 @@
 import React from 'react';
 
 export const Hero: React.FC = () => {
-  // Fix: Removed unused 'id' parameter to match MouseEventHandler signature and rely on hardcoded 'form-section' as per original implementation
   const scrollTo = () => {
     const el = document.getElementById('form-section');
     el?.scrollIntoView({ behavior: 'smooth' });
@@ -14,7 +13,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="w-full max-w-4xl px-6 pt-24 pb-16 md:pt-32 md:pb-24 text-center">
+    <section className="w-full max-w-4xl px-6 pt-24 pb-8 md:pt-32 md:pb-12 text-center">
       <div className="inline-block bg-orange-100 text-orange-600 px-4 py-1.5 rounded-full text-sm font-bold mb-6">
         🎉 사전이벤트 배민 쿠폰 뿌리는 중
       </div>
@@ -41,9 +40,14 @@ export const Hero: React.FC = () => {
           어떻게 작동해요?
         </button>
       </div>
-      
-      {/* 고해상도 유지를 위해 CSS로 재현한 '슬픈 배달음식 증후군' 섹션 */}
-      <div className="mt-16 relative group">
+    </section>
+  );
+};
+
+export const SadSyndrome: React.FC = () => {
+  return (
+    <section className="w-full max-w-4xl px-6 pb-20 text-center">
+      <div className="relative group">
         <div className="overflow-hidden rounded-3xl shadow-2xl border border-gray-100 bg-white aspect-[1.4/1] md:aspect-[2/1] flex flex-col items-center justify-center p-8 md:p-12 text-left">
           <div className="max-w-xl w-full">
             <div className="mb-6">

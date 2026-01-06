@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Hero } from './components/Hero';
+import { Hero, SadSyndrome } from './components/Hero';
 import { Benefits } from './components/Benefits';
 import { HowItWorks } from './components/HowItWorks';
 import { UseCases } from './components/UseCases';
@@ -29,10 +29,11 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center overflow-x-hidden">
       <Hero />
+      <FormSection />
+      <SadSyndrome />
       <Benefits />
       <HowItWorks />
       <UseCases />
-      <FormSection />
       <FAQ />
       <Footer />
       {showSticky && <StickyCTA />}
