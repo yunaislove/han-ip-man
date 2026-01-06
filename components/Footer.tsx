@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const Footer: React.FC = () => {
@@ -7,8 +6,8 @@ export const Footer: React.FC = () => {
       <div className="max-w-4xl mx-auto">
         <p className="font-bold text-white mb-4 text-lg">한입만 (Han-ip-man)</p>
         <div className="mb-2 leading-relaxed">
-          <p className="text-gray-300 mb-1">한입만 팀</p>
-          <p>비즈니스 문의: <a href="mailto:hanipman.officail@gmail.com" className="hover:text-white transition-colors">hanipman.officail@gmail.com</a></p>
+          <p className="text-gray-300 mb-1">team 가짜대학생</p>
+          <p>비즈니스 문의: <a href="mailto:znlwm0226@gmail.com" className="hover:text-white transition-colors">znlwm0226@gmail.com</a></p>
         </div>
         <div className="flex justify-center gap-6 mt-8 mb-8">
           <a href="#" className="hover:text-white transition-colors">이용약관</a>

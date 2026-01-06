@@ -78,6 +78,19 @@ export const FormSection: React.FC = () => {
             />
           </div>
 
+          {/* 개인정보 수집 및 이용 동의 체크박스 */}
+          <div className="flex items-center gap-2 px-1 py-1">
+            <input
+              type="checkbox"
+              id="privacy"
+              required
+              className="w-5 h-5 accent-orange-500 cursor-pointer rounded border-gray-300 focus:ring-orange-500"
+            />
+            <label htmlFor="privacy" className="text-sm text-gray-600 cursor-pointer select-none">
+              개인정보 수집 및 이용에 동의합니다 <span className="text-orange-500 font-bold">(필수)</span>
+            </label>
+          </div>
+
           {/* 제출 버튼 */}
           <button
             type="submit"
@@ -98,7 +111,7 @@ export const FormSection: React.FC = () => {
           </button>
           
           <p className="text-[11px] text-gray-400 text-center leading-tight">
-            신청 시 <span className="underline">개인정보처리방침</span>에 동의하게 되며,<br />
+            신청 시 위 안내된 내용에 동의하게 되며,<br />
             출시 알림 외의 목적으로는 사용되지 않습니다.
           </p>
         </form>
